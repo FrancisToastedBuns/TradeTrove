@@ -6,4 +6,16 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\Images\add-icon.png" />
+    <None Include="wwwroot\Images\box-icon.png" />
+    <None Include="wwwroot\Images\cart-icon.png" />
+    <None Include="wwwroot\Images\catalog-icon.png" />
+    <None Include="wwwroot\Images\edit-location-icon.png" />
+    <None Include="wwwroot\Images\heart-icon.png" />
+    <None Include="wwwroot\Images\logo.png" />
+    <None Include="wwwroot\Images\search-icon.png" />
+    <None Include="wwwroot\Images\user-icon.png" />
+  </ItemGroup>
+
 </Project>

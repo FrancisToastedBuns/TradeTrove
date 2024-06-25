@@ -2,7 +2,49 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container d-flex align-items-center justify-content-center pt-3">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item carouselImage active">
+                <img src="https://images.pexels.com/photos/135620/pexels-photo-135620.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item carouselImage">
+                <img src="https://images.pexels.com/photos/264636/pexels-photo-264636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item carouselImage">
+                <img src="https://images.pexels.com/photos/2079438/pexels-photo-2079438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<div class="container">
+    <h2>Popular</h2>
+    <div class="container products ps-5" id="products">
+        <div class="row" id="productCardGroups">
+            <div class="card" style="width: 200px;">
+                <button class="btn align-self-end no-style-btn pt-3 pe-2 p-0">
+                    <img src="/Images/heart-icon.png" width="25" height="25">
+                </button>
+                <img src="https://purepng.com/public/uploads/large/purepng.com-hammerhammerscoldstrike-agairon-hammer-1701527869920y9pcy.png" class="card-img-top p-3" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Hammer</h5>
+                    <div class="d-flex justify-content-between">
+                        <p class="card-text fw-bold">$2.00</p>
+                        <button class="p-0 no-style-btn">
+                            <img src="/Images/add-icon.png" width="25" height="25">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
