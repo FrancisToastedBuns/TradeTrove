@@ -1,4 +1,12 @@
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using TradeTrove.Data;
 var builder = WebApplication.CreateBuilder(args);
+var connectionString = builder.Configuration.GetConnectionString("TradeTroveDbContextConnection") ?? throw new InvalidOperationException("Connection string 'TradeTroveDbContextConnection' not found.");
+
+builder.Services.AddDbContext<TradeTroveDbContext>(options => options.UseSqlServer(connectionString));
+
+builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<TradeTroveDbContext>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
