@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="~/TradeTrove.styles.css" asp-append-version="true" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
     <style>
         body {
@@ -39,7 +40,7 @@
             border: none;
             background: white;
         }
-
+        
         .searchBarBg {
             background-color: #2877ee;
             padding: 2px;
@@ -63,20 +64,13 @@
         }
 
         .normalBtn {
-            padding: 10px 15px;
             border-radius: 7px;
             background-color: white;
+            color: black;
+            text-decoration: none;
+            font-size: 22px;
         }
 
-        .carousel-inner {
-            border-radius: 25px !important ;
-            width: 1000px;
-        }
-
-        .carouselImage {
-            height: 250px;
-            width: 1250px;
-        }
 
         .deliveryDiv {
             background-color: #252734;
@@ -147,10 +141,7 @@
         .buttons {
             width: 350px;
         }
-
-        .card-text {
-            font-size: 18px;
-        }
+        
     </style>
     
 </head>
@@ -203,18 +194,18 @@
                 </div>
 
                 <div class="buttons d-flex justify-content-evenly">
-                    <button class="btn border border-2 normalBtn">
-                        <img src="/Images/box-icon.png" width="20" height="20">
-                    </button>
-                    <button class="btn border border-2 normalBtn">
-                        <img src="/Images/heart-icon.png" width="20" height="20">
-                    </button>
-                    <button class="btn border border-2 normalBtn">
-                        <img src="/Images/cart-icon.png" width="20" height="20">
-                    </button>
-                    <button class="btn border border-2 normalBtn">
-                        <img src="/Images/user-icon.png" width="20" height="20">
-                    </button>
+                    <a href="#">
+                        <i class="bi bi-box-seam btn border border-2 normalBtn"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi bi-heart btn border border-2 normalBtn"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi bi-cart3 btn border border-2 normalBtn"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi bi-person btn border border-2 normalBtn"></i>
+                    </a>
                 </div>
             </div>
         </nav>
